@@ -1,0 +1,1 @@
+requests # import requests for making HTTP requests needed for web scraping or API calls
