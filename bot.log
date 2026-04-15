@@ -87,3 +87,68 @@
 2026-04-15 11:31:45,649 - bot - INFO - Status: FILLED
 2026-04-15 11:31:45,649 - bot - INFO - Sent Symbol: ETHUSDT
 2026-04-15 11:31:45,650 - bot - INFO - Sent Qty: 1.5
+2026-04-15 12:17:20,471 - bot - INFO - --- New Mock Order Request ---
+2026-04-15 12:17:20,471 - bot - INFO - Validation passed. Sending mock REST direct order...
+2026-04-15 12:17:20,472 - bot - DEBUG - Sending POST request to https://httpbin.org/post with data: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 10.0}
+2026-04-15 12:17:24,390 - bot - ERROR - Network Error: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /post (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))
+2026-04-15 12:17:24,391 - bot - ERROR - Order Placement Failed: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /post (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))
+2026-04-15 12:17:33,094 - bot - INFO - --- New Mock Order Request ---
+2026-04-15 12:17:33,095 - bot - INFO - Validation passed. Sending mock REST direct order...
+2026-04-15 12:17:33,096 - bot - DEBUG - Sending POST request to https://httpbin.org/post with data: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 10.0}
+2026-04-15 12:17:33,242 - bot - ERROR - Network Error: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /post (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))
+2026-04-15 12:17:33,243 - bot - ERROR - Order Placement Failed: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /post (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))
+2026-04-15 12:17:41,673 - bot - INFO - --- New Mock Order Request ---
+2026-04-15 12:17:41,673 - bot - INFO - Validation passed. Sending mock REST direct order...
+2026-04-15 12:17:41,674 - bot - DEBUG - Sending POST request to https://httpbin.org/post with data: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 10.0}
+2026-04-15 12:17:41,844 - bot - ERROR - Network Error: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /post (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))
+2026-04-15 12:17:41,845 - bot - ERROR - Order Placement Failed: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /post (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)')))
+2026-04-15 12:20:19,065 - bot - INFO - --- New Mock Order Request ---
+2026-04-15 12:20:19,066 - bot - INFO - Validation passed. Sending mock REST direct order...
+2026-04-15 12:20:19,066 - bot - DEBUG - Sending POST request to https://httpbin.org/post with data: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-15 12:20:19,958 - bot - DEBUG - Response: {'args': {}, 'data': '{"symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "quantity": 0.01}', 'files': {}, 'form': {}, 'headers': {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Content-Length': '72', 'Content-Type': 'application/json', 'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.32.3', 'X-Amzn-Trace-Id': 'Root=1-69df3554-0c25f1df78d01b213a77a753'}, 'json': {'quantity': 0.01, 'side': 'BUY', 'symbol': 'BTCUSDT', 'type': 'MARKET'}, 'origin': '115.244.239.146', 'url': 'https://httpbin.org/post'}
+2026-04-15 12:20:19,958 - bot - INFO - Order Placed Successfully via Direct REST Call!
+2026-04-15 12:20:19,959 - bot - INFO - Mock Order ID: 449577
+2026-04-15 12:20:19,959 - bot - INFO - Status: FILLED
+2026-04-15 12:20:19,959 - bot - INFO - Sent Symbol: BTCUSDT
+2026-04-15 12:20:19,959 - bot - INFO - Sent Qty: 0.01
+2026-04-15 12:20:38,818 - bot - INFO - --- New Mock Order Request ---
+2026-04-15 12:20:38,819 - bot - INFO - Validation passed. Sending mock REST direct order...
+2026-04-15 12:20:38,819 - bot - DEBUG - Sending POST request to https://httpbin.org/post with data: {'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.5}
+2026-04-15 12:20:39,649 - bot - DEBUG - Response: {'args': {}, 'data': '{"symbol": "ETHUSDT", "side": "BUY", "type": "MARKET", "quantity": 1.5}', 'files': {}, 'form': {}, 'headers': {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Content-Length': '71', 'Content-Type': 'application/json', 'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.32.3', 'X-Amzn-Trace-Id': 'Root=1-69df3568-541cec98458d9e7075eaf368'}, 'json': {'quantity': 1.5, 'side': 'BUY', 'symbol': 'ETHUSDT', 'type': 'MARKET'}, 'origin': '115.244.239.146', 'url': 'https://httpbin.org/post'}
+2026-04-15 12:20:39,650 - bot - INFO - Order Placed Successfully via Direct REST Call!
+2026-04-15 12:20:39,651 - bot - INFO - Mock Order ID: 982307
+2026-04-15 12:20:39,651 - bot - INFO - Status: FILLED
+2026-04-15 12:20:39,651 - bot - INFO - Sent Symbol: ETHUSDT
+2026-04-15 12:20:39,651 - bot - INFO - Sent Qty: 1.5
+2026-04-15 18:53:06,691 - bot - INFO - --- New Mock Order Request ---
+2026-04-15 18:53:06,692 - bot - INFO - Validation passed. Sending mock REST direct order...
+2026-04-15 18:53:06,692 - bot - DEBUG - Sending POST request to https://httpbin.org/post with data: {'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.5}
+2026-04-15 18:53:06,704 - bot - ERROR - Network Error: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /post (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022F3AB83BF0>: Failed to resolve 'httpbin.org' ([Errno 11001] getaddrinfo failed)"))
+2026-04-15 18:53:06,705 - bot - ERROR - Order Placement Failed: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /post (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022F3AB83BF0>: Failed to resolve 'httpbin.org' ([Errno 11001] getaddrinfo failed)"))
+2026-04-15 18:53:37,425 - bot - INFO - --- New Mock Order Request ---
+2026-04-15 18:53:37,426 - bot - INFO - Validation passed. Sending mock REST direct order...
+2026-04-15 18:53:37,426 - bot - DEBUG - Sending POST request to https://httpbin.org/post with data: {'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.5}
+2026-04-15 18:53:40,290 - bot - DEBUG - Response: {'args': {}, 'data': '{"symbol": "ETHUSDT", "side": "BUY", "type": "MARKET", "quantity": 1.5}', 'files': {}, 'form': {}, 'headers': {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Content-Length': '71', 'Content-Type': 'application/json', 'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.32.3', 'X-Amzn-Trace-Id': 'Root=1-69df9186-573c0b5d4f78fb3a29b9913e'}, 'json': {'quantity': 1.5, 'side': 'BUY', 'symbol': 'ETHUSDT', 'type': 'MARKET'}, 'origin': '27.61.244.113', 'url': 'https://httpbin.org/post'}
+2026-04-15 18:53:40,290 - bot - INFO - Order Placed Successfully via Direct REST Call!
+2026-04-15 18:53:40,290 - bot - INFO - Mock Order ID: 690800
+2026-04-15 18:53:40,291 - bot - INFO - Status: FILLED
+2026-04-15 18:53:40,291 - bot - INFO - Sent Symbol: ETHUSDT
+2026-04-15 18:53:40,292 - bot - INFO - Sent Qty: 1.5
+2026-04-15 18:54:05,170 - bot - INFO - --- New Mock Order Request ---
+2026-04-15 18:54:05,171 - bot - INFO - Validation passed. Sending mock REST direct order...
+2026-04-15 18:54:05,172 - bot - DEBUG - Sending POST request to https://httpbin.org/post with data: {'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.5}
+2026-04-15 18:54:07,069 - bot - DEBUG - Response: {'args': {}, 'data': '{"symbol": "ETHUSDT", "side": "BUY", "type": "MARKET", "quantity": 1.5}', 'files': {}, 'form': {}, 'headers': {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Content-Length': '71', 'Content-Type': 'application/json', 'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.32.3', 'X-Amzn-Trace-Id': 'Root=1-69df91a0-5b29d95c1d89f9414cbd7609'}, 'json': {'quantity': 1.5, 'side': 'BUY', 'symbol': 'ETHUSDT', 'type': 'MARKET'}, 'origin': '27.61.244.113', 'url': 'https://httpbin.org/post'}
+2026-04-15 18:54:07,069 - bot - INFO - Order Placed Successfully via Direct REST Call!
+2026-04-15 18:54:07,070 - bot - INFO - Mock Order ID: 333533
+2026-04-15 18:54:07,070 - bot - INFO - Status: FILLED
+2026-04-15 18:54:07,070 - bot - INFO - Sent Symbol: ETHUSDT
+2026-04-15 18:54:07,071 - bot - INFO - Sent Qty: 1.5
+2026-04-15 18:54:50,254 - bot - INFO - --- New Mock Order Request ---
+2026-04-15 18:54:50,255 - bot - INFO - Validation passed. Sending mock REST direct order...
+2026-04-15 18:54:50,256 - bot - DEBUG - Sending POST request to https://httpbin.org/post with data: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-15 18:54:53,270 - bot - DEBUG - Response: {'args': {}, 'data': '{"symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "quantity": 0.01}', 'files': {}, 'form': {}, 'headers': {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Content-Length': '72', 'Content-Type': 'application/json', 'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.32.3', 'X-Amzn-Trace-Id': 'Root=1-69df91ce-4ea256667a1c8f8411ea8357'}, 'json': {'quantity': 0.01, 'side': 'BUY', 'symbol': 'BTCUSDT', 'type': 'MARKET'}, 'origin': '27.61.244.113', 'url': 'https://httpbin.org/post'}
+2026-04-15 18:54:53,277 - bot - INFO - Order Placed Successfully via Direct REST Call!
+2026-04-15 18:54:53,277 - bot - INFO - Mock Order ID: 925806
+2026-04-15 18:54:53,278 - bot - INFO - Status: FILLED
+2026-04-15 18:54:53,278 - bot - INFO - Sent Symbol: BTCUSDT
+2026-04-15 18:54:53,278 - bot - INFO - Sent Qty: 0.01

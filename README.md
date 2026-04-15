@@ -1,7 +1,8 @@
 # Mock Trading Bot (No APIs)
 
-A localized, simplified Python application to place simulated "mock" orders via direct REST calls using `requests`. 
-All authentication, API keys, and Binance-specific HMAC logic have been removed. It sends plain REST `POST` requests to `https://httpbin.org/post` to demonstrate functionality safely and cleanly.
+A simple, risk-free training tool that lets you practice placing cryptocurrency trades (like buying Bitcoin or selling Ethereum) without using real money or connecting to a real exchange. 
+
+Instead of talking to a real trading platform like Binance, it sends practice signals to a safe test server (`httpbin.org`). This means you don't need any accounts, passwords, or secret API keys—just run the app and see how a trading bot works safely behind the scenes!
 
 ## Prerequisites
 
@@ -27,6 +28,8 @@ python ui.py
 ```
 A desktop window will open where you can input a Symbol, Side, Type, and Quantity. Clicking "Place Mock Order" will send a real REST request to `httpbin.org` and display the parsed response in the logs window.
 
+![GUI](GUI.png)
+
 ### Option 2: Run via Command Line (CLI)
 If you prefer running commands directly in the terminal, you can use the CLI tool. 
 
@@ -42,6 +45,8 @@ python -m bot.cli --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.5 --pri
 
 The script will validate your inputs, send the direct REST request, and print the resulting success message to the console.
 
+![CLI](CLI.png)
+
 ---
 
 ## What it does under the hood
@@ -49,3 +54,5 @@ The script will validate your inputs, send the direct REST request, and print th
 1. **`bot/client.py`**: Initiates a `requests.Session()` and posts the payload as a JSON REST call to `httpbin.org`.
 2. **`bot/orders.py`**: Intercepts the response from the mock server, generates a simulated order ID, and treats it as a success if validation passes.
 3. **`bot/validators.py`**: Checks that user inputs are logically sound before any network call is ever made.
+
+If your file names are slightly different (e.g., `gui.png` instead of `GUI.png`), make sure to adjust the text inside the parentheses in the `README.md` to match the exact filename, as markdown image links are case-sensitive.
